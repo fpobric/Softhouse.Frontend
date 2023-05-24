@@ -1,0 +1,49 @@
+{
+  "name": "example-with-next-auth",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/helper-module-imports": "^7.18.6",
+    "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-solid-svg-icons": "^6.2.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@hookform/resolvers": "^3.1.0",
+    "@reduxjs/toolkit": "^1.8.6",
+    "@types/node": "18.11.9",
+    "@types/react": "^18.0.24",
+    "@typescript-eslint/parser": "^5.41.0",
+    "axios": "^1.1.3",
+    "babel-plugin-macros": "^3.1.0",
+    "bootstrap": "^5.2.2",
+    "flag-icons": "^6.6.6",
+    "i": "^0.3.7",
+    "i18next": "^22.0.5",
+    "next": "13.0.0",
+    "next-auth": "^4.22.1",
+    "next-i18next": "^12.1.0",
+    "next-redux-wrapper": "^8.0.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.9",
+    "react-hydration-provider": "^1.0.1",
+    "react-i18next": "^12.0.0",
+    "react-intl-tel-input": "^8.2.0",
+    "react-modal": "^3.16.1",
+    "react-modal-hook": "^3.0.2",
+    "react-redux": "^8.0.4",
+    "sass": "^1.55.0",
+    "touch-cli": "^0.0.1",
+    "typescript": "4.8.4",
+    "yup": "^0.32.11"
+  },
+  "devDependencies": {
+    "eslint": "8.26.0",
+    "eslint-config-next": "13.0.0"
+  }
+}

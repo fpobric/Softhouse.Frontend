@@ -1,0 +1,85 @@
+.app-text {
+  &.-orange {
+    color: $orange;
+  }
+  &.-dark-orange {
+    color: $old_rose;
+  }
+  &.-light {
+    font-weight: 400 !important;
+  }
+  &.-normal {
+    font-weight: 500 !important;
+  }
+  &.-medium {
+    font-weight: 600 !important;
+  }
+  &.-bold {
+    font-weight: 900 !important;
+  }
+  &.-no-decoration {
+    text-decoration: none;
+  }
+  &.-underline {
+    text-decoration: underline !important;
+  }
+  &.-uppercase {
+    text-transform: uppercase;
+  }
+  &.-small {
+    font-size: 12px;
+  }
+  &.-regular {
+    font-size: 16px;
+  }
+  &.-large {
+    font-size: 20px;
+  }
+  &.-extra-large {
+    font-size: 24px;
+  }
+  &.-left {
+    text-align: left;
+  }
+  &.-right {
+    text-align: right;
+  }
+  &.-center {
+    text-align: center;
+  }
+  &.-break {
+    word-break: break-word;
+  }
+  &.-uppercase {
+    text-transform: uppercase;
+  }
+  &.-link {
+    color: $orange;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+      color: $old_rose;
+    }
+  }
+  &.-section {
+    border: 0;
+    &:active {
+      border: 0;
+    }
+    &.-active {
+      text-decoration: underline;
+    }
+  }
+}
+
+.form-help {
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+  color: $silver_foil;
+}
+
+.app-label {
+  > label {
+    padding: 1rem 0 !important;
+  }
+}

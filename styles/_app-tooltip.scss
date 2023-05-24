@@ -1,0 +1,21 @@
+.app-tooltip {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  .tooltiptext {
+    visibility: hidden;
+    background-color: $orange;
+    color: #fff;
+    width: auto;
+    text-align: left;
+    border-radius: 6px;
+    padding: 5px;
+    margin-left: 10px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  &:hover .tooltiptext {
+    visibility: visible;
+  }
+}

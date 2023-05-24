@@ -1,0 +1,12 @@
+.header {
+  .hamburger {
+    border: 0;
+    &:focus {
+      outline: 0 !important;
+      box-shadow: none;
+    }
+  }
+  .mobile-icons {
+    margin-left: auto;
+  }
+}

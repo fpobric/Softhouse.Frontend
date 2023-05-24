@@ -1,0 +1,132 @@
+.inputs {
+  &.-radio {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+
+    &[type="checkbox"] {
+      width: 1.3em;
+      height: 1.3em;
+      background-color: white;
+      border-radius: 50%;
+      border: 1px solid #ddd;
+      appearance: none;
+      -webkit-appearance: none;
+      outline: none;
+      cursor: pointer;
+    }
+    &:checked {
+      background-color: $orange;
+      border-color: $orange;
+      box-shadow: 0 4px 20px 0 rgb(0 0 0 / 15%);
+      &[type="radio"] {
+        appearance: none;
+        /* create custom radiobutton appearance */
+        display: inline-block;
+        padding: 3px;
+        /* background-color only for content */
+        background-clip: content-box;
+        border: 2px solid $orange;
+        background-color: $orange;
+        border-radius: 50%;
+      }
+      &[type="checkbox"] {
+        border-radius: 100px;
+        appearance: none;
+        /* create custom radiobutton appearance */
+        display: inline-block;
+        padding: 3px;
+        /* background-color only for content */
+        background-clip: content-box;
+        border: 2px solid $orange;
+        background-color: $orange;
+        border-radius: 50%;
+      }
+    }
+  }
+  &.-dropdown {
+    min-width: 250px;
+    text-align: left;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+    z-index: 2;
+    &::after {
+      position: absolute;
+      border-top: 4px solid;
+      border-right: 4px solid transparent;
+      border-bottom: 0;
+      border-left: 4px solid transparent;
+      top: 15px;
+      right: 10px;
+    }
+    .dropdown-item {
+      &:hover {
+        background-color: $orange;
+      }
+    }
+
+    &.-dropdown-toggle {
+      position: relative;
+      &::after {
+        position: absolute;
+        border-top: 4px solid;
+        border-right: 4px solid transparent;
+        border-bottom: 0;
+        border-left: 4px solid transparent;
+        top: 15px;
+        right: 10px;
+      }
+    }
+  }
+  &.-form-input {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-bottom: 2px solid $dark_green;
+    &:focus {
+      box-shadow: rgba(43, 70, 96, 0.2) 0 0 4px !important;
+      border-color: $dark_green;
+    }
+  }
+  &.-checkbox {
+    border-radius: 0% !important;
+    &:checked {
+      background-color: $dark_green;
+      border-color: $dark_green;
+    }
+  }
+  &.-no-bg {
+    background-color: transparent;
+  }
+  &.-form-select {
+    padding-left: 0;
+    padding-right: 0;
+    border: 0;
+    border-radius: 0;
+    > button {
+      border: 0;
+      border-bottom: 2px solid $dark_green;
+      border-radius: 0;
+    }
+  }
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+  svg {
+    position: absolute;
+    right: 10px;
+    width: 25px;
+    height: 15px;
+    top: 22px;
+    &:hover {
+      color: $orange;
+    }
+    &:active {
+      color: $old_rose;
+    }
+  }
+}
